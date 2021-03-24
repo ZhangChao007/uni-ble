@@ -1,0 +1,115 @@
+/* 全局css变量，后期主题换色也靠这个 */
+	:root {
+		--border-width: 1px;  //头像分割线
+		--borderLine: 1px;  //首页边框线
+		--borderDtLine:1px; //默认分割线1px
+		--borderSLine:2px; //默认分割线2px		
+		--people-select-border: var(--border-width) solid  var(--tabBarFontAColor) !important; //头像选择边框线
+		--defaultBorder: var(--borderDtLine) solid  var(--lineColor) !important;  //默认分割线
+		--tableBorder: var(--borderLine) solid  var(--lineColor) !important;      //日程表格线
+		--defaultSBorder: var(--borderSLine) solid  var(--lineColor) !important;  //线2px
+
+		// 背景色
+		--themeBgColor:#FFFFFF;                     //主题背景色
+		--secondBgColor:#F8F8F8;                   //二级主题背景色（分割背景）
+		--navigationColor:#FFFFFF;                  //导航颜色
+		--photoBgColor:#F0F0F0;                     //头像背景色
+		--popBgColor: #3D3E44;                      //二级Tab弹框
+		--photoCheckBg:rgba(236, 247, 255, 0.8);     //选众头像背景
+		--photoDisableBg:#F1F1F1;                   //禁止选中背景
+		--searchBg:#F8F8F8;                         //搜索背景
+		--selectBg:#FFFFFF;                         //下拉框背景	
+		--selectShadow:rgba(205, 201, 201, 0.25); //下拉框shadow	
+// 时间插件遮罩层
+		--timePmaskBg:linear-gradient(180deg, rgba(255,255,255,1),rgba(255,255,255,0.5), rgba(255,255,255,0.1),rgba(255,255,255,0)),linear-gradient(0deg, rgba(255,255,255,1),rgba(255,255,255,0.5), rgba(255,255,255,0.1),rgba(255,255,255,0));							
+		//字体颜色
+		--themeFontColor:rgba(58, 58, 68, 1);        //主题字体颜色 #3A3A44
+		--secondFontColor:rgba(120, 120, 133, 1);    //二级字体色#787885;
+		--specialFontColor:rgba(255, 255, 255, 1);   //比赛报告等特殊页面白色字体
+		--placeholderColor:rgba(180, 180, 187, 1);   //提示文字颜色#B4B4BB;
+		--tabBarFontAColor:#2196F3;					 //tabBar线颜色#2196F3;
+		--timeFontColor:#000000;                     //时间弹框字体
+		// 线颜色
+		--lineColor: #F2F7FA;					     //页面分割线颜色,
+		--tabBarLineColor:rgba(66, 165, 245, 1);     //tabBar线颜色#42A5F5;	
+		// 首页
+		--homeLineColor:#C4C4C4;					     //数字分割线颜色,
+		--homeHeaderFontColor:#292A31;                 //首页头像教练字体颜色
+		--homeFontColor:#9696A0;                       //首页头像教练副字体颜色	
+		--hometemperatureColor:#3A3A44;                 //首页温度颜色
+		--homeCityFontColor:#3A3A44;                      //切换城市
+		// 日程
+		--weekTabBgColor: #F0F0F1;                        //年月日切换背景
+		--weekTabBtnBgColor:rgba(255,255,255,1);          //年月日切换背景
+		--weekTabLine:#D2D2D6;                             //年月日切换线
+		--weekPopupBg:#FBFBFB;                             //日程弹窗背景色
+		--workItemMatch: rgba(225,212,244,.2);
+		--workItemTraining: rgba(203,229,204,.2);
+		--workItemTravel: rgba(196,218,255,.2);
+		--workItemRecovery: rgba(241,252,247,1);
+		--workItemStudy:rgba(255,234,193,.2);
+		--capLeftTable:rgba(248,248,248,0.6);               //cap---左侧表格
+		--acBg:#fff;               							//cap---ac上升下降背景颜色
+		--capTitBg: #F8F8F8;								//右侧CAPtitle背景
+		--meetingBg:rgba(196, 218, 255, .2) ;              //日程卡片背景色
+		--travelBg: rgba(196, 218, 255, .2) ;               //日程卡片背景色
+		--dayoffBg: rgba(255,234,193,.2) ;               //日程卡片背景色
+		--holidayBg:rgba(254,244,244,0.2);                //日程卡片背景色
+		--trainingBg:rgba(203, 229, 204, .2);              //日程卡片背景色
+		--matchBg: rgba(225, 212, 244, .2) ;               //日程卡片背景色
+		--recoveryBg:#F1FCF7;                //日程卡片背景色
+		--studyBg:rgba(255, 234, 193, .2);                //日程卡片背景色
+		//添加cap
+		--capTabBg: #F9FDF5;								//cap
+		--capTabShadow: 0px 0px 2.94rpx 2.94rpx rgba(235, 235, 235, 0.36);	//cap
+		--capTabBor: 1px;										//cap
+		--capTabLine: #EDEDED;										//cap
+		--capCol: #3A3A44;										//cap
+		// 梯队
+		--teamPhotoBg:#F0F0F0;                           //梯队头像list背景
+		--teamtextBg:#FFFFFF;                            //梯队头像文字背景
+		--teamnumColor:rgba(192,192,197,0.6);           //梯队球号文字颜色
+		--teamSTextColor:#737380;                       //教练员职位文字颜色
+		--teamLBColor:#F8F8F8;                         //队员详情左侧导航选中背景
+		--teamRHBg:#4A4B57;                           //队员详情右侧头部背景	
+		--teamRFontColor:#FFFFFF;                    //队员详情中文名字体
+		--teamRNameColor:rgba(255,255,255,0.5);       //队员详情英文名字	
+		--teamlistBg:#FAFAFA;                          //信息隔行背景	
+		--teamlistFistBg:#FFFFFF;                          //信息隔行背景	
+		// 伤病
+		--injuredRedColor:#F6655A;                         //伤病数据字体颜色 
+		--injuredGreenColor:#65B168;                         //伤病数据字体颜色
+		--injuredListBg:#FFFFFF;                             //伤病治疗list背景 
+		--injuredBorderColor:#BDBDC3;                        //伤病治疗边框颜色
+		--injuredvalueColor:#BDBDC3;                        //伤病右侧value字体颜色
+		--injuredListBg:#F8F8F8;                            //伤病编辑伤病图list背景
+		--injuredListlineBg:#E9E9E9;                        //伤病编辑伤病图list线背景
+		// 赛程
+		--MatchLineBg:#F8F8F8;                                 //赛程边线背景
+		// 比赛报告
+		--MRLineBg:#3A3A44;                                      //比赛红黄牌线背景
+		--MRnavListBg:#4A4B56;                                  //比赛报告list导航背景颜色
+		--MRChangeLineBg:#D8D8DA;                               //比赛报告换人线颜色
+		// 比赛记录
+		--MRecordSpeedBg:#282828;                               //比赛记录进度条背景
+		--MRecordRightBg:#323232;                                //比赛记录右侧背景
+		--MRecordRightLine:rgba(85, 84, 84, 0.47);               //比赛记录右侧分割线
+		--MRecordRightTimeColor:#C0E3FF;                         //比赛记录右侧时间颜色
+		--MRecordRightRemarkPColor:#848282;                      //比赛记录右侧备注记录人字体颜色
+		--MRecordRightRemarkColor:rgba(255,255,255,0.82);        //比赛记录右侧备注字体颜色
+		// 人员管理
+		--peopleMCarmeBg:#E8E8E8;                                //添加人员管理照相机背景
+		// 赛季管理
+		--seasonMListBg:#F6F6F6;                                 //赛季管理选择时间list默认背景
+		--seasonMListCheckBg:rgba(236,247,255,0.8);              //选中背景
+		--seasonMListBorderBg:rgba(66, 165, 245, 0.6);           //赛季管理选择时间list边框选中颜色
+		--seasonMListdiableBg:rgba(246, 246, 246,0.7);           //赛季管理禁止选中赛季
+		--seasonMListdiableColor:rgba(120, 120, 133,0.3);        //赛季管理禁止选中赛季字体
+			// 教案
+		--teachDetailsRBg:#FFFFFF;                               //教案详情右侧背景
+			//训练统计
+		--trainEchartsBorder:#F3F3F3;                            //训练统计echarts图表坐标
+		--trainlistHeadBg:#FAFAFA;                                //体测报告aphv列表头部
+		// 战术板
+		--tacticalBoredr:#EBEBEB;                                 //战术板默认边框
+	}
